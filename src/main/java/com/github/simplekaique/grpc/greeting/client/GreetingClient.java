@@ -10,6 +10,7 @@ public class GreetingClient {
         System.out.println("Hello I'm a gRPC client");
 
         ManagedChannel channel = ManagedChannelBuilder.forAddress("localhost",50051)
+                .usePlaintext(true)
                 .build();
 
         System.out.println("Creating stub");
