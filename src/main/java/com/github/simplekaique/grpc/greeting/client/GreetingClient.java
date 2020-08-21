@@ -1,6 +1,9 @@
 package com.github.simplekaique.grpc.greeting.client;
 
-import com.proto.dummy.*;
+import com.proto.dummy.GreetRequest;
+import com.proto.dummy.GreetResponse;
+import com.proto.dummy.GreetServiceGrpc;
+import com.proto.dummy.Greeting;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 
